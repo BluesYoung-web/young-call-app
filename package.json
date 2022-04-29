@@ -17,13 +17,23 @@
     "test": "vitest",
     "build:browser": "vite build",
     "build:dev": "tsup --watch",
-    "build": "tsup"
+    "build": "vite build && tsup",
+    "play": "vite playground --host"
   },
   "keywords": [
     "call-app",
     "scheme"
   ],
-  "author": "BluesYoung",
+  "author": "BluesYoung-web",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BluesYoung-web/young-call-app.git"
+  },
+  "unpkg": "dist/index.umd.js",
+  "jsdelivr": "dist/index.umd.js",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@swc/core": "^1.2.173",
