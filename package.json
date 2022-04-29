@@ -18,7 +18,8 @@
     "build:browser": "vite build",
     "build:dev": "tsup --watch",
     "build": "vite build && tsup",
-    "play": "vite playground --host"
+    "play": "vite playground --host",
+    "release": "bumpp --commit --tag --push && pnpm publish"
   },
   "keywords": [
     "call-app",
@@ -38,6 +39,7 @@
   "devDependencies": {
     "@swc/core": "^1.2.173",
     "@types/node": "16",
+    "bumpp": "^7.1.1",
     "happy-dom": "^3.1.0",
     "tsup": "^5.12.6",
     "typescript": "^4.6.3",
