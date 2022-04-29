@@ -112,6 +112,15 @@ const openHandler = () => callApp.call()
 
 ### 浏览器直接引入
 
-`<script src="//cdn.jsdelivr.net/npm/jquery"></script>`
+```html
+<!-- 国内推荐使用 jsdelivr -->
+<script src="//cdn.jsdelivr.net/npm/young-call-app"></script>
+<!-- or -->
+<script src="//unpkg/young-call-app"></script>
 
-`const callApp = new window.YoungCallApp()`
+<script>
+const callApp = new window.YoungCallApp(config, options);
+
+callApp.call();
+</script>
+```
