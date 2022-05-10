@@ -28,8 +28,12 @@
   "author": "BluesYoung-web",
   "repository": {
     "type": "git",
-    "url": "git@github.com:BluesYoung-web/young-call-app.git"
+    "url": "git+ssh://git@github.com/BluesYoung-web/young-call-app.git"
   },
+  "bugs": {
+    "url": "https://github.com/BluesYoung-web/young-call-app/issues"
+  },
+  "homepage": "https://github.com/BluesYoung-web/young-call-app#readme",
   "unpkg": "dist/index.umd.js",
   "jsdelivr": "dist/index.umd.js",
   "files": [
