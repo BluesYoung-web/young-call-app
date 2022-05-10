@@ -1,6 +1,6 @@
 {
   "name": "young-call-app",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "try call app",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
