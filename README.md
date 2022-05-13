@@ -2,34 +2,6 @@
 
 目前只实现了基于 `window.location.href` 的唤端
 
-## 开发环境
-
-```bash
-node: 16.13.1
-pnpm: 6.26.1
-```
-
-## 开发
-
-```bash
-# 基于 vitest 的 TDD
-pnpm dev
-# 执行单元测试
-pnpm test
-
-# tsup 监听模式打包(修改代码立即打包)
-pnpm build:dev
-# 打 umd 的包，供浏览器直接使用(基于 vite/rollup)
-pnpm build:browser
-```
-
-## 打包
-
-```bash
-# 产出所有格式的包
-pnpm build
-```
-
 ## 使用
 
 [vue demo](./playground/src/App.vue)
@@ -123,4 +95,31 @@ const callApp = new window.YoungCallApp(config, options);
 
 callApp.call();
 </script>
+```
+
+## 开发环境
+
+```bash
+node: 16.13.1
+pnpm: 6.26.1
+```
+
+## 开发
+
+```bash
+# 基于 vitest 的 TDD
+pnpm dev
+# 执行单元测试
+pnpm test
+
+# 基于 vite/rollup 打包
+# tsup 打出来的包在部分环境下无法正常使用，所以目前只是用来生成 dts 文件
+pnpm build
+```
+
+## 打包
+
+```bash
+# 产出所有格式的包
+pnpm build
 ```
