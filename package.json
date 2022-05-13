@@ -2,24 +2,22 @@
   "name": "young-call-app",
   "version": "0.1.2",
   "description": "try call app",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.es.js",
       "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
     "dev": "vitest -u",
     "test": "vitest",
-    "build:browser": "vite build",
-    "build:dev": "tsup --watch",
     "build": "vite build && tsup",
     "play": "vite playground --host",
-    "release": "bumpp --commit --tag --push && pnpm publish"
+    "release": "pnpm build && bumpp --commit --tag --push && pnpm publish"
   },
   "keywords": [
     "call-app",

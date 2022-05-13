@@ -1,7 +1,7 @@
 /*
  * @Author: zhangyang
  * @Date: 2022-04-28 16:27:49
- * @LastEditTime: 2022-04-29 10:42:02
+ * @LastEditTime: 2022-05-13 11:22:08
  * @Description: 
  */
 /// <reference types="vitest" />
@@ -13,13 +13,10 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'YoungCallApp',
+      formats: ['es', 'umd', 'cjs'],
       fileName: (format) => `index.${format}.js`
     },
-    rollupOptions: {
-      output: {
-        format: 'umd'
-      }
-    },
+    sourcemap: true
   },
   test: {
     environment: 'happy-dom'
